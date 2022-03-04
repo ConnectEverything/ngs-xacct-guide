@@ -16,7 +16,7 @@ application or many).
 > [MaxAckPending](https://docs.nats.io/nats-concepts/jetstream/consumers#maxackpending), 
 > [RateLimit](https://docs.nats.io/nats-concepts/jetstream/consumers#ratelimit), and
 > [FlowControl](https://docs.nats.io/nats-concepts/jetstream/consumers#flowcontrol) policies for the JS Consumer (i.e. not specific to
-> one consuming application). Consider sharing [JetStream as a service](JetStreamAPIShare.md) for application-centric delivery management.
+> one consuming application). Consider sharing [JetStream as a service](JetStreamServiceShare.md) for application-centric delivery management.
 
 ## Order Events Scenario
 

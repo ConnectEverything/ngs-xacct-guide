@@ -26,7 +26,7 @@ nats pub --context "<ACCTA USER CONTEXT>" "retail.v1.cart.started" "Customer ini
 ```
 
 > Note: ACCTB will not receive any messages published until the following steps are complete. Only publishes made when
-> ACCTB has access and is actively subscribed will be delivered. Consider using [JetStream](JetStreamAPIShare.md) if you require
+> ACCTB has access and is actively subscribed will be delivered. Consider using [JetStream](https://docs.nats.io/nats-concepts/jetstream) if you require
 > durable message streams.
 
 ###### Make your message stream eligible to be visible to other accounts

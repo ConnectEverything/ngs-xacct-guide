@@ -60,11 +60,11 @@ Tokens are provided to the importing account owner out-of-band of NGS.
 ## Cross-Account Share Scenarios 
 
 ###### Basic Shares  
-* [Enable an account to invoke your service](APIShare.md)
+* [Enable an account to invoke your service](ServiceShare.md)
 * [Enable an account to subscribe your stream](StreamShare.md)
 
 ###### JetStream Consumption Shares
-* [Enable an account to consume from your JetStream streaming service (Pull JS Consumer)](JetStreamAPIShare.md) 
+* [Enable an account to consume from your JetStream streaming service (Pull JS Consumer)](JetStreamServiceShare.md) 
 * [Enable an account to consume from your JetStream-backed stream (Push JS Consumer)](JetStreamStreamShare.md)
 
 > Note: JetStream "Publish Share" is a "basic" share scenario. Export the JetStream-enabled
