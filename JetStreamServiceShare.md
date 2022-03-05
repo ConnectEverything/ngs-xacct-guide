@@ -24,7 +24,7 @@ A supply-chain application in ACCTB needs to reliably see and process the restoc
 ACCTC has set up a JetStream Consumer named `RESTOCKEVENTS-C1` for ACCTB's application to receive restock events. The steps
 below show how to grant ACCTB access to use the service in its event processing application.
 
-> See also [ngs-xacct-demo/js-consumer-service](https://github.com/ConnectEverything/ngs-xacct-demo/js-consumer-service/) for
+> See also [ngs-xacct-demo/js-consumer-service](https://github.com/ConnectEverything/ngs-xacct-demo/tree/main/js-consumer-service) for
 > scenario scripts and JetStream configuration.
 
 ## As the service provider account (ACCTC)
