@@ -1,4 +1,4 @@
-# Share a message stream
+# Cross-Account Message Stream Share
 
 Using the `add export`, `generate activation`, and `add import` commands of the `nsc` tool, a message stream may be made available to other accounts.
 

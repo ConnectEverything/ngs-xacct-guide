@@ -60,13 +60,31 @@ Tokens are provided to the importing account owner out-of-band of NGS.
 ## Cross-Account Share Scenarios 
 
 ###### Basic Shares  
+
+The following guides illustrate account owner steps to cross-account share a single subject such as a business API or
+non-durable event message channel (i.e. At-Most-Once delivery):
+
 * [Enable an account to invoke your service](ServiceShare.md)
-* [Enable an account to subscribe your stream](StreamShare.md)
+* [Enable an account to subscribe your message stream](StreamShare.md)
 
 ###### JetStream Consumption Shares
-* [Enable an account to consume from your JetStream streaming service (Pull JS Consumer)](JetStreamServiceShare.md) 
+
+These guides illustrate account owner steps to cross-account share a durable message stream that leverages 
+[JetStream](https://docs.nats.io/nats-concepts/jetstream) technology providing At-Least-Once delivery capability to
+consuming applications.
+
+Sharing JetStream Consumers cross-account requires two exports: the delivery channel and the delivery-acknowledgement
+channel. JetStream offers two options for delivery channel which are illustrated in the below guides.
+
+> Note: JetStream always streams messages from server to client, but there are two options for delivery subject and
+> flow-control architecture. Consuming JetStream as a service (Pull JS Consumer) is recommended as the default choice. 
+
+Both guides illustrate a third _optional_ export that provides a consuming application the additional entitlement to
+obtain JS Consumer information (e.g. unprocessed messages) via API request.  
+
+* [Enable an account to consume from your JetStream service (Pull JS Consumer)](JetStreamServiceShare.md) 
 * [Enable an account to consume from your JetStream-backed stream (Push JS Consumer)](JetStreamStreamShare.md)
 
-> Note: JetStream "Publish Share" is a "basic" share scenario. Export the JetStream-enabled
+> Note: Granting another account permission to publish to your JetStream is a "basic" share scenario. Export a JetStream-ingested
 > subject as a _service_ to allow the remote account to publish on the subject and (optionally) receive an acknowledgement reply
 > from JetStream (At-Least-Once publishing).  

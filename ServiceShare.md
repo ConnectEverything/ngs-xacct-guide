@@ -1,8 +1,8 @@
-# Share a Service API
+# Cross-Account Service Share 
 
-Using the `add export`, `generate activation`, and `add import` commands of the `nsc` tool, a service API may be made available to other accounts.
+Using the `add export`, `generate activation`, and `add import` commands of the `nsc` tool, a service may be made available to other accounts.
 
-> Note: an API provider may choose to make their API available to _any_ account in NGS (_public_ export) or to
+> Note: A service provider may choose to make their service available to _any_ account in NGS (_public_ export) or to
 > selected accounts only (_private_ export). Private export is shown.
 
 ## Payment Service Scenario
