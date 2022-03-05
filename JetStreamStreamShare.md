@@ -29,6 +29,9 @@ A fulfillment application in ACCTB needs to reliably see and process order event
 ACCTA has set up a JetStream Consumer named `ORDEREVENTS-C1` for ACCTB's application to receive order events. The steps
 below show how to grant ACCTB access to subscribe to the `ORDEREVENTS-C1` delivery subject in its event processing application.
 
+> See also [ngs-xacct-demo/js-consumer-stream](https://github.com/ConnectEverything/ngs-xacct-demo/js-consumer-stream/) for
+> scenario scripts and JetStream configuration.
+
 ## As the JetStream Consumer stream provider account (ACCTA)
 
 ###### Publish Order Events

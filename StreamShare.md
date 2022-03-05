@@ -16,6 +16,9 @@ Cart events of multiple types are published to the subject `retail.v1.cart.<even
 An analytics system that resides in ACCTB needs to process cart events into its learning models. The steps
 below show how to grant ACCTB access to subscribe and receive cart events.
 
+> See also [ngs-xacct-demo/service](https://github.com/ConnectEverything/ngs-xacct-demo/service/) for
+> scenario scripts.
+
 ## As the stream publishing account (ACCTA)
 
 ###### Publish Cart Events

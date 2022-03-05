@@ -14,6 +14,9 @@ payment operations including payment tender. Payment tender is an API that takes
 The payment service is leveraged by multiple API client applications, including a point-of-sale checkout application that lives in ACCTB.
 The steps below show how to grant ACCTB access to use the tender API in its checkout application.
 
+> See also [ngs-xacct-demo/stream](https://github.com/ConnectEverything/ngs-xacct-demo/stream/) for
+> scenario scripts.
+
 ## As the API provider account (ACCTA)
 
 ###### Implement and start your service
