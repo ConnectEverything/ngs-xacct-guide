@@ -1,3 +1,5 @@
+<img src="static/Synadia_Logo_new_font_only_black.png" alt="Synadia Communications logo" width="200"/>
+
 # Share JetStream as a Stream
 
 Using the `add export`, `generate activation` and `add import` commands of the `nsc` tool, a durable JetStream
@@ -105,5 +107,8 @@ nats sub --context "<ACCTB USER CONTEXT>" --js-api-prefix "ACCTA.API" --ack --qu
 [#1] Received JetStream message: consumer: ORDEREVENTS > ORDEREVENTS-C1 / subject: retail.v1.order.events / delivered: 1 / consumer seq: 3 / stream seq: 3 / ack: true
 Captured order 1234!
 ```
-
 > Note: `--queue` is required since the ORDEREVENTS-C1 consumer specifies Deliver Group as "order-processor" to enable multi-consumer load balancing.
+
+<hr>
+&copy; 2022 Synadia Communications. All rights reserved.
+

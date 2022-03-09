@@ -1,3 +1,5 @@
+<img src="static/Synadia_Logo_new_font_only_black.png" alt="Synadia Communications logo" width="200"/>
+
 # NGS Cross-Account Sharing Guide
 
 ## Introduction
@@ -53,9 +55,19 @@ Tokens are provided to the importing account owner out-of-band of NGS.
 > _revocations_ list. Removing an account export grant completely immediately revokes visibility and access for all 
 > existing imports.
 
-## Pre-requisites
+## Guide Pre-requisites
 
-**TODO**: What are NGSv2 launch links to NGS account setup?  Both Account exporter and Account importer sides.
+The guide assumes three configured NGS accounts referred to as _ACCTA_, _ACCTB_, and _ACCTC_. To execute
+privileged administration steps as an account, NGS account setup must be complete and the user's administrative
+environment prepared with NGS security principles and private account credentials.
+
+See [the Synadia site](https://synadia.com/ngs/signup) for more information on how to sign up for Synadia's service and
+the [NATS documentation site](https://nats-io.github.io/docs/nats_tools/nsc/) for information about using `nsc` to 
+manage your NATS account.
+
+The administrative environment may be prepared using the [NGS command-line setup](https://github.com/ConnectEverything/ngs-cli/).
+
+> Note: NGS JetStream capability not publicly available at time of initial guide publish.
 
 ## Cross-Account Share Scenarios 
 
@@ -87,4 +99,7 @@ obtain JS Consumer information (e.g. unprocessed messages) via API request.
 
 > Note: Granting another account permission to publish to your JetStream is a "basic" share scenario. Export a JetStream-ingested
 > subject as a _service_ to allow the remote account to publish on the subject and (optionally) receive an acknowledgement reply
-> from JetStream (At-Least-Once publishing).  
+> from JetStream (At-Least-Once publishing).
+
+<hr>
+&copy; 2022 Synadia Communications. All rights reserved.

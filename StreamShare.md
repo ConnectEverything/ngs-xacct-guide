@@ -1,3 +1,5 @@
+<img src="static/Synadia_Logo_new_font_only_black.png" alt="Synadia Communications logo" width="200"/>
+
 # Cross-Account Message Stream Share
 
 Using the `add export`, `generate activation`, and `add import` commands of the `nsc` tool, a message stream may be made available to other accounts.
@@ -73,3 +75,5 @@ nats sub --context "<ACCTB USER CONTEXT>" --queue "cart-processor" "retail.v1.ca
 [#1] Received on "retail.v1.cart.started"
 Customer initiated Cart 1234!
 ```
+<hr>
+&copy; 2022 Synadia Communications. All rights reserved.

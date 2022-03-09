@@ -1,3 +1,5 @@
+<img src="static/Synadia_Logo_new_font_only_black.png" alt="Synadia Communications logo" width="200"/>
+
 # Cross-Account Service Share 
 
 Using the `add export`, `generate activation`, and `add import` commands of the `nsc` tool, a service may be made available to other accounts.
@@ -73,3 +75,6 @@ Completing the scenario, ACCTA would see the following output at the mock Paymen
 08:49:23 [#0] Received on subject "retail.v1.payment.tender":
 08:49:23 Nats-Request-Info: {"acc":"AD7T74QPICDLJYKEJQ37RKP2VXUJYUUIHZ7XMGMWFEOZNKVO3VBF46F7","rtt":88255126}
 ```
+
+<hr>
+&copy; 2022 Synadia Communications. All rights reserved.

@@ -1,3 +1,5 @@
+<img src="static/Synadia_Logo_new_font_only_black.png" alt="Synadia Communications logo" width="200"/>
+
 # Share JetStream as a Service 
 
 Using the `add export`, `generate activation` and `add import` commands of the `nsc` tool, a durable JetStream
@@ -104,5 +106,6 @@ Restock for item 5678 pronto!
 
 Acknowledged message
 ```
-
+<hr>
+&copy; 2022 Synadia Communications. All rights reserved.
 
