@@ -52,7 +52,7 @@ Activation tokens are minted by the exporting account owner as necessary to perm
 Tokens are provided to the importing account owner out-of-band of NGS.
 
 > Note: Both public and private exports may be selectively _revoked_ from a specific importing account through a
-> _revocations_ list. Removing an account export grant completely immediately revokes visibility and access for all 
+> _revocations_ list. Removing an account export grant immediately revokes visibility and access for all 
 > existing imports.
 
 ## Guide Pre-requisites
