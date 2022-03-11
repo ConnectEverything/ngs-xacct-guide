@@ -55,10 +55,11 @@ Add private exports of the following Restock Events services in ACCTC with the `
 | Request JetStream consumer status | service | `$JS.API.CONSUMER.INFO.RESTOCKEVENTS.RESTOCKEVENTS-C1`     | Optional        |
 
 ```bash
-nsc add export --private --account "<ACCTC NAME>" --name "RESTOCKEVENTS-GRANT-NEXT" --subject "\$JS.API.CONSUMER.MSG.NEXT.RESTOCKEVENTS.RESTOCKEVENTS-C1" --service
+nsc add export --private --account "<ACCTC NAME>" --name "RESTOCKEVENTS-GRANT-NEXT" --subject "\$JS.API.CONSUMER.MSG.NEXT.RESTOCKEVENTS.RESTOCKEVENTS-C1" --service --response-type "Stream"
 nsc add export --private --account "<ACCTC NAME>" --name "RESTOCKEVENTS-GRANT-ACK" --subject "\$JS.ACK.RESTOCKEVENTS.RESTOCKEVENTS-C1.>" --service
 nsc add export --private --account "<ACCTC NAME>" --name "RESTOCKEVENTS-GRANT-INFO" --subject "\$JS.API.CONSUMER.INFO.RESTOCKEVENTS.RESTOCKEVENTS-C1" --service
 ```
+> Note: Request message delivery service export should include `--response-type "Stream"` to allow multiple messages to be delivered to the client's reply subject in response.
 
 > Note: an export only makes a subject _eligible_ to be imported into another account's namespace. Other accounts must
 > explicitly import the subject. If the export is private (as here), other accounts must be in possession of an
