@@ -21,6 +21,8 @@ below show how to grant ACCTB access to subscribe and receive cart events.
 > See also [ngs-xacct-demo/stream](https://github.com/ConnectEverything/ngs-xacct-demo/tree/main/stream) for
 > scenario scripts.
 
+<img src="static/StreamShare.png" width="1024">
+
 ## As the stream publishing account (ACCTA)
 
 ###### Publish Cart Events

@@ -29,6 +29,8 @@ below show how to grant ACCTB access to use the service in its event processing 
 > See also [ngs-xacct-demo/js-consumer-service](https://github.com/ConnectEverything/ngs-xacct-demo/tree/main/js-consumer-service) for
 > scenario scripts and JetStream configuration.
 
+<img src="static/JetStreamServiceShare.png" width="1024">
+
 ## As the service provider account (ACCTC)
 
 ###### Publish Restock Events

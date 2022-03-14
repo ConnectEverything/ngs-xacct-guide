@@ -34,6 +34,8 @@ below show how to grant ACCTB access to subscribe to the `ORDEREVENTS-C1` delive
 > See also [ngs-xacct-demo/js-consumer-stream](https://github.com/ConnectEverything/ngs-xacct-demo/tree/main/js-consumer-stream) for
 > scenario scripts and JetStream configuration.
 
+<img src="static/JetStreamStreamShare.png" alt="Scenario Diagram" width="1024">
+
 ## As the JetStream Consumer stream provider account (ACCTA)
 
 ###### Publish Order Events

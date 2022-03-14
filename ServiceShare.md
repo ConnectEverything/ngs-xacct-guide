@@ -19,6 +19,8 @@ The steps below show how to grant ACCTB access to use the tender API in its chec
 > See also [ngs-xacct-demo/service](https://github.com/ConnectEverything/ngs-xacct-demo/tree/main/service) for
 > scenario scripts.
 
+<img src="static/ServiceShare.png" width="1024">
+
 ## As the API provider account (ACCTA)
 
 ###### Implement and start your service
