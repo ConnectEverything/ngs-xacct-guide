@@ -85,14 +85,14 @@ These guides illustrate account owner steps to cross-account share a durable mes
 [JetStream](https://docs.nats.io/nats-concepts/jetstream) technology providing At-Least-Once delivery capability to
 consuming applications.
 
-Sharing JetStream Consumers cross-account requires two exports: the delivery channel and the delivery-acknowledgement
-channel. JetStream offers two options for delivery channel which are illustrated in the below guides.
+Sharing JetStream Consumers cross-account requires two account exports. JetStream offers two architectural options for 
+stream message delivery which is illustrated in the following guides.
 
-> Note: JetStream always streams messages from server to client, but there are two options for delivery subject and
+> Note: JetStream always streams messages from server to client, but there are two options for message delivery and
 > flow-control architecture. Consuming JetStream as a service (Pull JS Consumer) is recommended as the default choice. 
 
-Both guides illustrate a third _optional_ export that provides a consuming application the additional entitlement to
-obtain JS Consumer information (e.g. unprocessed messages) via API request.  
+Both guides illustrate a third _optional_ export that provides a remote account application the additional entitlement to
+obtain JS Consumer information (e.g. pending unprocessed messages, configuration settings, etc.) via API request.  
 
 * [Enable an account to consume from your JetStream service (Pull JS Consumer)](JetStreamServiceShare.md) 
 * [Enable an account to consume from your JetStream-backed stream (Push JS Consumer)](JetStreamStreamShare.md)
@@ -100,6 +100,20 @@ obtain JS Consumer information (e.g. unprocessed messages) via API request.
 > Note: Granting another account permission to publish to your JetStream is a "basic" share scenario. Export a JetStream-ingested
 > subject as a _service_ to allow the remote account to publish on the subject and (optionally) receive an acknowledgement reply
 > from JetStream (At-Least-Once publishing).
+
+###### Use of JetStream Prefix
+
+When JetStream is shared between accounts, it is assumed that each account is JetStream enabled. A JetStream-enabled
+account has JetStream APIs (subjects starting with `$JS`) present in its account namespace.
+
+To disambiguate API calls in a cross-account scenario, JetStream APIs imported into an account from another account 
+must be mapped to a local subject with a subject prefix different from `$JS`.  This alternative local subject prefix
+is called the _JS Prefix_ and must be set accordingly in the importing account's client application code.
+
+The JetStream cross-account guides show usage of JS prefix.
+
+> Note: JS Prefix is a special case of general capability in subject export/import to map an alternative subject name
+> in the importing account to avoid namespace collision.
 
 <hr>
 &copy; 2022 Synadia Communications. All rights reserved.
